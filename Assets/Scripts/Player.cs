@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && transform.position.y < 4.2f)
         {
             thisAnimation.Play();
             rb.velocity = Vector3.zero;
